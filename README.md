@@ -1,1 +1,1 @@
-# AFNAN Platform 🌿
+# AFNAN Platform 🌱
