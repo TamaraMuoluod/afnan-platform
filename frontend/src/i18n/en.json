@@ -2,5 +2,12 @@
   "appName": "Afnan Platform",
   "darkMode": "Dark mode",
   "lightMode": "Light mode",
-  "language": "العربية"
+  "language": "العربية",
+  "nav": {
+    "home": "Home",
+    "engineers": "Engineers",
+    "chatbot": "Afnan AI",
+    "showcase": "Our Work",
+    "login": "Log in"
+  }
 }

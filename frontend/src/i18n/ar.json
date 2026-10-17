@@ -2,5 +2,12 @@
   "appName": "منصة أفنان",
   "darkMode": "الوضع الغامق",
   "lightMode": "الوضع الفاتح",
-  "language": "English"
+  "language": "English",
+  "nav": {
+    "home": "الرئيسية",
+    "engineers": "المهندسون",
+    "chatbot": "  أفنان  AI ",
+    "showcase": "إنجازاتنا",
+    "login": "تسجيل الدخول"
+  }
 }

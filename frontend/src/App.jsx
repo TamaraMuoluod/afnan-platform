@@ -1,29 +1,30 @@
-import { useTheme } from "./context/ThemeContext.jsx";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar.jsx";
 import { useLanguage } from "./context/LanguageContext.jsx";
 
+function Placeholder({ title }) {
+  return (
+    <div className="flex items-center justify-center py-32">
+      <h1 className="text-3xl font-bold text-green-700 dark:text-green-400">
+        {title}
+      </h1>
+    </div>
+  );
+}
+
 function App() {
-  const { theme, toggleTheme } = useTheme();
-  const { t, toggleLanguage } = useLanguage();
+  const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-green-50 dark:bg-gray-900">
-      <h1 className="text-4xl font-bold text-green-700 dark:text-green-400">
-        {t("appName")} 🌱
-      </h1>
-      <div className="flex gap-3">
-        <button
-          onClick={toggleTheme}
-          className="px-6 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700"
-        >
-          {theme === "light" ? t("darkMode") : t("lightMode")}
-        </button>
-        <button
-          onClick={toggleLanguage}
-          className="px-6 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700"
-        >
-          {t("language")}
-        </button>
-      </div>
+    <div className="min-h-screen bg-green-50 dark:bg-gray-900">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Placeholder title={t("nav.home")} />} />
+        <Route path="/engineers" element={<Placeholder title={t("nav.engineers")} />} />
+        <Route path="/chatbot" element={<Placeholder title={t("nav.chatbot")} />} />
+        <Route path="/showcase" element={<Placeholder title={t("nav.showcase")} />} />
+        <Route path="/auth" element={<Placeholder title={t("nav.login")} />} />
+      </Routes>
     </div>
   );
 }
