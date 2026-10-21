@@ -21,9 +21,10 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
         <NavLink
           to="/"
-          className="text-xl font-bold text-green-700 dark:text-green-400"
+          className="flex items-center gap-2 text-xl font-bold text-green-700 dark:text-green-400"
         >
-          {t("appName")} 🌱
+          <img src="/logo-mark.png" alt="" className="h-9 w-auto" />
+          {t("appName")}
         </NavLink>
 
         <div className="flex items-center gap-2">
