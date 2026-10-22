@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
+import LandingPage from "./pages/LandingPage.jsx";
 import { useLanguage } from "./context/LanguageContext.jsx";
 
 function Placeholder({ title }) {
@@ -19,7 +20,7 @@ function App() {
     <div className="min-h-screen bg-green-50 dark:bg-gray-900">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Placeholder title={t("nav.home")} />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/engineers" element={<Placeholder title={t("nav.engineers")} />} />
         <Route path="/chatbot" element={<Placeholder title={t("nav.chatbot")} />} />
         <Route path="/showcase" element={<Placeholder title={t("nav.showcase")} />} />
