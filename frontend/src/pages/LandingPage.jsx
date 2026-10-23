@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import InstallButton from "../components/InstallButton.jsx";
 
 export default function LandingPage() {
   const { t } = useLanguage();
@@ -33,6 +34,8 @@ export default function LandingPage() {
             {t("landing.clientBtn")}
           </Link>
         </div>
+
+        <InstallButton />
       </div>
     </section>
   );
