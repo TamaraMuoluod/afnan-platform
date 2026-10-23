@@ -3,10 +3,11 @@
   "darkMode": "الوضع الغامق",
   "lightMode": "الوضع الفاتح",
   "language": "English",
+  "back": "رجوع",
   "nav": {
     "home": "الرئيسية",
     "engineers": "المهندسون",
-    "chatbot": " أفنان AI ",
+    "chatbot": "أفنان AI ",
     "showcase": "إنجازاتنا",
     "login": "تسجيل الدخول"
   },

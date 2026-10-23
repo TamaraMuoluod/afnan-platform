@@ -22,13 +22,13 @@ export default function LandingPage() {
 
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <Link
-            to="/auth"
+            to="/auth/engineer"
             className="px-8 py-3 rounded-xl bg-green-600 text-white font-semibold hover:bg-green-700 text-center"
           >
             {t("landing.engineerBtn")}
           </Link>
           <Link
-            to="/auth"
+            to="/auth/client"
             className="px-8 py-3 rounded-xl border-2 border-green-600 text-green-700 dark:text-green-400 font-semibold hover:bg-green-600 hover:text-white text-center"
           >
             {t("landing.clientBtn")}
