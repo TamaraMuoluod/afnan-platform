@@ -4,6 +4,7 @@
   "lightMode": "الوضع الفاتح",
   "language": "English",
   "back": "رجوع",
+  "soon": "قريباً",
   "nav": {
     "home": "الرئيسية",
     "engineers": "المهندسون",
@@ -17,5 +18,25 @@
     "engineerBtn": "سجّل كمهندس",
     "clientBtn": "اطلب مهندساً",
     "installBtn": "ثبّت أفنان على جهازك"
+  },
+  "form": {
+    "fullName": "الاسم الرباعي",
+    "birthDate": "تاريخ الميلاد",
+    "phone": "رقم الموبايل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "governorate": "المحافظة",
+    "area": "المنطقة",
+    "specialization": "نوع الاختصاص",
+    "experience": "سنوات الخبرة",
+    "about": "نبذة عنك",
+    "photo": "إرفاق صورة",
+    "submit": "إنشاء الحساب"
+  },
+  "specializations": {
+    "agri": "زراعي",
+    "solar": "طاقة شمسية",
+    "electric": "كهرباء",
+    "decor": "ديكور"
   }
 }

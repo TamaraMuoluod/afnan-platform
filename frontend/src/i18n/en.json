@@ -4,6 +4,7 @@
   "lightMode": "Light mode",
   "language": "العربية",
   "back": "Back",
+  "soon": "Soon",
   "nav": {
     "home": "Home",
     "engineers": "Engineers",
@@ -17,5 +18,25 @@
     "engineerBtn": "Join as an Engineer",
     "clientBtn": "Request an Engineer",
     "installBtn": "Install Afnan on your device"
+  },
+  "form": {
+    "fullName": "Full name (four names)",
+    "birthDate": "Date of birth",
+    "phone": "Mobile number",
+    "email": "Email",
+    "password": "Password",
+    "governorate": "Governorate",
+    "area": "Area",
+    "specialization": "Specialization",
+    "experience": "Years of experience",
+    "about": "About you",
+    "photo": "Attach photo",
+    "submit": "Create account"
+  },
+  "specializations": {
+    "agri": "Agricultural",
+    "solar": "Solar energy",
+    "electric": "Electrical",
+    "decor": "Decor"
   }
 }

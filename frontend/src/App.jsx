@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import BackButton from "./components/BackButton.jsx";
 import LandingPage from "./pages/LandingPage.jsx";
 import AuthPage from "./pages/AuthPage.jsx";
+import EngineerSignupPage from "./pages/EngineerSignupPage.jsx";
 import { useLanguage } from "./context/LanguageContext.jsx";
 
 function Placeholder({ title }) {
@@ -28,7 +29,7 @@ function App() {
         <Route path="/chatbot" element={<Placeholder title={t("nav.chatbot")} />} />
         <Route path="/showcase" element={<Placeholder title={t("nav.showcase")} />} />
         <Route path="/auth" element={<AuthPage />} />
-        <Route path="/auth/engineer" element={<Placeholder title={t("landing.engineerBtn")} />} />
+        <Route path="/auth/engineer" element={<EngineerSignupPage />} />
         <Route path="/auth/client" element={<Placeholder title={t("landing.clientBtn")} />} />
       </Routes>
     </div>
