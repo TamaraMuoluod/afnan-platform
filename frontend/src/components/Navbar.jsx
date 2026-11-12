@@ -11,6 +11,8 @@ export default function Navbar() {
     { to: "/engineers", label: t("nav.engineers") },
     { to: "/chatbot", label: t("nav.chatbot") },
     { to: "/showcase", label: t("nav.showcase") },
+    { to: "/follow", label: t("nav.follow") },
+    { to: "/contact", label: t("nav.contact") },
   ];
 
   const btn =

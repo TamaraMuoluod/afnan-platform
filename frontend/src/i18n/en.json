@@ -10,7 +10,13 @@
     "engineers": "Engineers",
     "chatbot": "Afnan AI",
     "showcase": "Our Work",
+    "follow": "Follow us",
+    "contact": "Contact us",
     "login": "Log in"
+  },
+  "follow": {
+    "videos": "Afnan videos",
+    "accounts": "Our accounts"
   },
   "landing": {
     "title": "Afnan, for a future where technology does not compete with nature, but they collaborate",

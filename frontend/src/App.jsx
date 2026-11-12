@@ -4,6 +4,8 @@ import BackButton from "./components/BackButton.jsx";
 import LandingPage from "./pages/LandingPage.jsx";
 import AuthPage from "./pages/AuthPage.jsx";
 import EngineerSignupPage from "./pages/EngineerSignupPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
+import FollowPage from "./pages/FollowPage.jsx";
 import { useLanguage } from "./context/LanguageContext.jsx";
 
 function Placeholder({ title }) {
@@ -28,6 +30,8 @@ function App() {
         <Route path="/engineers" element={<Placeholder title={t("nav.engineers")} />} />
         <Route path="/chatbot" element={<Placeholder title={t("nav.chatbot")} />} />
         <Route path="/showcase" element={<Placeholder title={t("nav.showcase")} />} />
+        <Route path="/follow" element={<FollowPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/auth/engineer" element={<EngineerSignupPage />} />
         <Route path="/auth/client" element={<Placeholder title={t("landing.clientBtn")} />} />
