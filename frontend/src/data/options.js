@@ -1,8 +1,20 @@
 export const specializations = [
-  { id: "agri", active: true },
-  { id: "solar", active: false },
-  { id: "electric", active: false },
-  { id: "decor", active: false },
+  {
+    id: "agri",
+    active: true,
+    subs: [
+      { id: "farms", active: true },
+      { id: "fields", active: true },
+      { id: "gardens", active: true },
+      { id: "plantDiseases", active: true },
+      { id: "irrigation", active: true },
+      { id: "soil", active: true },
+      { id: "afforestation", active: true },
+    ],
+  },
+  { id: "solar", active: false, subs: [] },
+  { id: "electric", active: false, subs: [] },
+  { id: "decor", active: false, subs: [] },
 ];
 
 export const governorates = [

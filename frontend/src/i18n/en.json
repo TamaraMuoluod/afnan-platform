@@ -27,7 +27,9 @@
     "password": "Password",
     "governorate": "Governorate",
     "area": "Area",
+    "address": "Detailed address",
     "specialization": "Specialization",
+    "subSpecialization": "Sub-specialization",
     "experience": "Years of experience",
     "about": "About you",
     "photo": "Attach photo",
@@ -38,5 +40,14 @@
     "solar": "Solar energy",
     "electric": "Electrical",
     "decor": "Decor"
+  },
+  "subSpecializations": {
+    "farms": "Farms",
+    "fields": "Fields",
+    "gardens": "Gardens",
+    "plantDiseases": "Plant diseases",
+    "irrigation": "Irrigation",
+    "soil": "Soil",
+    "afforestation": "Afforestation"
   }
 }

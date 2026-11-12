@@ -37,6 +37,7 @@ export default function EngineerSignupPage() {
     governorate: "anbar",
     area: "",
     specialization: "agri",
+    subSpecialization: "",
     experience: "",
     about: "",
     photo: null,
@@ -62,6 +63,16 @@ export default function EngineerSignupPage() {
     active: s.active,
     label: t(`specializations.${s.id}`),
   }));
+
+  const currentSpec = specializations.find((s) => s.id === form.specialization);
+  const subOptions = (currentSpec?.subs ?? []).map((s) => ({
+    id: s.id,
+    active: s.active,
+    label: t(`subSpecializations.${s.id}`),
+  }));
+
+  const pickSpecialization = (id) =>
+    setForm({ ...form, specialization: id, subSpecialization: "" });
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -130,8 +141,16 @@ export default function EngineerSignupPage() {
             label={t("form.specialization")}
             options={specOptions}
             value={form.specialization}
-            onChange={setValue("specialization")}
+            onChange={pickSpecialization}
           />
+          {subOptions.length > 0 && (
+            <FancySelect
+              label={t("form.subSpecialization")}
+              options={subOptions}
+              value={form.subSpecialization}
+              onChange={setValue("subSpecialization")}
+            />
+          )}
           <Field label={t("form.experience")}>
             <input type="number" min="0" className={inputClass} value={form.experience} onChange={set("experience")} />
           </Field>
