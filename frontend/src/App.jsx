@@ -4,6 +4,7 @@ import BackButton from "./components/BackButton.jsx";
 import LandingPage from "./pages/LandingPage.jsx";
 import AuthPage from "./pages/AuthPage.jsx";
 import EngineerSignupPage from "./pages/EngineerSignupPage.jsx";
+import ClientSignupPage from "./pages/ClientSignupPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import FollowPage from "./pages/FollowPage.jsx";
 import { useLanguage } from "./context/LanguageContext.jsx";
@@ -34,7 +35,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/auth/engineer" element={<EngineerSignupPage />} />
-        <Route path="/auth/client" element={<Placeholder title={t("landing.clientBtn")} />} />
+        <Route path="/auth/client" element={<ClientSignupPage />} />
       </Routes>
     </div>
   );

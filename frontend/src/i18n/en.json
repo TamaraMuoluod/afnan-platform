@@ -26,6 +26,7 @@
     "installBtn": "Install Afnan on your device"
   },
   "form": {
+    "clientTitle": "Join as a Client",
     "fullName": "Full name (four names)",
     "birthDate": "Date of birth",
     "phone": "Mobile number",
