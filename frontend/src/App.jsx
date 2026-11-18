@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage.jsx";
 import AuthPage from "./pages/AuthPage.jsx";
 import EngineerSignupPage from "./pages/EngineerSignupPage.jsx";
 import ClientSignupPage from "./pages/ClientSignupPage.jsx";
+import DirectoryPage from "./pages/DirectoryPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import FollowPage from "./pages/FollowPage.jsx";
 import { useLanguage } from "./context/LanguageContext.jsx";
@@ -28,7 +29,7 @@ function App() {
       <BackButton />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/engineers" element={<Placeholder title={t("nav.engineers")} />} />
+        <Route path="/engineers" element={<DirectoryPage />} />
         <Route path="/chatbot" element={<Placeholder title={t("nav.chatbot")} />} />
         <Route path="/showcase" element={<Placeholder title={t("nav.showcase")} />} />
         <Route path="/follow" element={<FollowPage />} />

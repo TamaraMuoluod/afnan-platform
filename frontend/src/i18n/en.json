@@ -18,6 +18,11 @@
     "videos": "Afnan videos",
     "accounts": "Our accounts"
   },
+  "engineers": {
+    "requestBtn": "Request this engineer",
+    "all": "All",
+    "noResults": "No engineers match these filters yet"
+  },
   "landing": {
     "title": "Afnan, for a future where technology does not compete with nature, but they collaborate",
     "subtitle": "Connecting engineers with clients",
